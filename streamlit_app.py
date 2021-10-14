@@ -69,7 +69,7 @@ else:
 
 
 with col3:
-	st.image('/home/shivani/ISB/ShinyApp/ANOVA-App/www/logo.png')
+	st.image('~/www/logo.png')
 
 
 
