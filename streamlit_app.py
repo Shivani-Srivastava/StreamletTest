@@ -69,7 +69,7 @@ else:
 
 
 with col3:
-	st.image('~/www/logo.png')
+	st.image('logo.png')
 
 
 
