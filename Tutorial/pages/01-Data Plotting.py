@@ -7,25 +7,7 @@ Shivani Srivastava
 '''
 
 import streamlit as st
-import gensim.downloader as api
-from gensim.test.utils import datapath
-from gensim import utils
-import gensim.models
-import gensim.models.word2vec
-import time
-import numpy as np
 import pandas as pd
-from sklearn.decomposition import IncrementalPCA    
-from sklearn.manifold import TSNE                   
-import plotly.express as px
-from plotly.subplots import make_subplots
-import plotly.graph_objects as go
-
-
-from gensim.models import doc2vec
-from scipy import spatial
-
-#wv = api.load('word2vec-google-news-300')
 
 def load_data(nrows):
     data = pd.read_csv(FILE_ADDRESS, nrows=nrows)
@@ -37,8 +19,6 @@ def load_data(nrows):
 
 
 st.sidebar.title('Sidebar Title: Static')
-
-st.sidebar.write(f"hello {st.session_state['user']} !")
 
 FILE_ADDRESS = st.sidebar.file_uploader('Upload file')
 
