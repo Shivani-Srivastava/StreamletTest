@@ -8,6 +8,7 @@ Shivani Srivastava
 
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 def load_data(nrows):
     data = pd.read_csv(FILE_ADDRESS, nrows=nrows)
